@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0C"
+    android:layoutDirection="rtl"
+    android:padding="16dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="#1C1C24"
+            android:gravity="center"
+            android:text="PUBG"
+            android:textColor="#00FF66"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لاعب محترف"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="النظام مستقر"
+                android:textColor="#00FF66"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Main Gauge Indicator Card -->
+    <LinearLayout
+        android:id="@+id/gaugeCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:background="#141419"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvCacheSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.8 GB"
+            android:textColor="#00FF66"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ذاكرة مؤقتة يمكن تنظيفها"
+            android:textColor="#A0A0AB"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Clean Main Button -->
+    <Button
+        android:id="@+id/btnClean"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/gaugeCard"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00FF66"
+        android:text="⚡ تنظيف الذاكرة المؤقتة"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Disclaimer Box -->
+    <TextView
+        android:id="@+id/tvDisclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnClean"
+        android:layout_marginTop="16dp"
+        android:background="#1C1C24"
+        android:padding="12dp"
+        android:text="📌 ملاحظة تقنية: التطبيق ينظف الذاكرة المؤقتة المسموح بها بنظام أندرويد فقط، ولا يحذف ملفات PUBG أو بياناتها، ولا يضمن زيادة الـ FPS."
+        android:textColor="#A0A0AB"
+        android:textSize="12sp" />
+
+</RelativeLayout>
